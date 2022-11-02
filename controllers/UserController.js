@@ -22,7 +22,7 @@ export const register = async (req, res) => {
         _id: user._id,
       },
       "secret",
-      { expiresIn: "1h" }
+      { expiresIn: "1d" }
     );
 
     const { passwordHash, ...userData } = user._doc;
