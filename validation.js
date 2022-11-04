@@ -13,8 +13,8 @@ export const registerValidation = [
 ];
 
 export const postCreateValidation = [
-  body("title", "Enter title").isLength({ min: 3 }).isString(),
-  body("text", "Enter text").isLength({ min: 10 }).isString(),
-  body("tags", "Enter array of tags").optional().isArray(),
+  body("title", "Enter title").isLength({ min: 3 }),
+  body("text", "Enter text").isLength({ min: 10 }),
+  body("tags", "Enter array of tags").optional(),
   body("imageUrl", "Enter correct url").optional().isString(),
 ];
